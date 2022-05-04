@@ -1,1 +1,2 @@
 google-cloud-bigquery==3.0.1
+Faker===13.7.0
