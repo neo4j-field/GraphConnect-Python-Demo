@@ -16,14 +16,12 @@ def dictionary_conversation(rows):
 def generate_faker_grainular_data(dictionary):
     faker = Faker()
     full_name = faker.name()
-    first_name,last_name = full_name.split()
     address = faker.address()
-
     # I wonder if I can use reflection to make this less painful..
-    faker_fields = [{'full_name': full_name, "first_name": first_name, "last_name": last_name, "address": address}]
-
-    for key,value in faker_fields:
-        dictionary[key] = value
+    faker_fields = [{'full_name': full_name, "address": address}]
+    for field in faker_fields:
+        for key,value in field.items():
+            dictionary[key] = value
 
     return dictionary
 

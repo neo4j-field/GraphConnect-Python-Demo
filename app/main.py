@@ -11,4 +11,8 @@ query = (
 client = get_bq_client()
 google_Rows = run_query(client,query=query)
 list_of_dictionaries = dictionary_conversation(google_Rows)
-print(seed_fake_data(list_of_dictionaries))
+final_inputs = seed_fake_data(list_of_dictionaries)
+
+
+
+
