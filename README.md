@@ -16,14 +16,15 @@ Steps():
 
 
 
-### Neo4j Cypher Workbench data model
+## Neo4j Cypher Workbench data model
 
 <img width="1772" alt="image" src="https://user-images.githubusercontent.com/90913666/167048860-ab34c0ea-129d-49b1-abeb-8c1034b6bdc5.png">
 
 
 
 
-### Big Query Source Data: ```bigquery-public-data.ml_datasets.credit_card_default```
+## Big Query Source Data:
+#### table: ```bigquery-public-data.ml_datasets.credit_card_default```
 ![image](https://user-images.githubusercontent.com/90913666/167048692-6d9c7ba6-f54b-4d69-8ac7-77077fe32918.png)
 
 
