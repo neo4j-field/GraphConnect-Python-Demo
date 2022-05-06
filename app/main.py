@@ -9,7 +9,7 @@ CONFIGURATION
 uri = 'bolt://localhost:7687'
 username = 'neo4j'
 database = 'graphconnect'
-password = 'Reddit123!'
+password = 'foo'
 query = (
     'SELECT *  FROM `bigquery-public-data.ml_datasets.credit_card_default`'
     'LIMIT 10000')
