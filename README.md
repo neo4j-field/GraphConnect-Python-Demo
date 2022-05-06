@@ -4,6 +4,18 @@ A demo of creating a graph using Python + Neo4j Driver to build a Graph from Goo
 
 
 
+Steps():
+
+* Run Neo4j 
+* Run main.py (the python application is dockerized in case you want to play at home) 
+
+
+
+
+
+
+
+
 ### Neo4j Cypher Workbench data model
 
 <img width="1772" alt="image" src="https://user-images.githubusercontent.com/90913666/167048860-ab34c0ea-129d-49b1-abeb-8c1034b6bdc5.png">
@@ -11,7 +23,7 @@ A demo of creating a graph using Python + Neo4j Driver to build a Graph from Goo
 
 
 
-### Big Query Source Data: `bigquery-public-data.ml_datasets.credit_card_default`
+### Big Query Source Data: ```bigquery-public-data.ml_datasets.credit_card_default```
 ![image](https://user-images.githubusercontent.com/90913666/167048692-6d9c7ba6-f54b-4d69-8ac7-77077fe32918.png)
 
 
