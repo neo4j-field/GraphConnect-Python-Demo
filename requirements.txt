@@ -1,2 +1,4 @@
 google-cloud-bigquery==3.0.1
 Faker===13.7.0
+neo4j==4.4.3
+pandas==1.4.2
