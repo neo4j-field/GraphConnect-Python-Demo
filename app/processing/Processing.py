@@ -3,7 +3,7 @@ from random import randint
 
 def dictionary_conversation(rows):
     '''
-    Converts the BigQuery.RowIterator object into a list of dictionaries.
+    Converts the bigquery.RowIterator object into a list of dictionaries.
     Simply makes it easier to manipulate and pre-process
     :param rows:
     :return:

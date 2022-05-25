@@ -1,15 +1,15 @@
-from BigQuery import get_bq_client,run_query
-from Processing import dictionary_conversation,seed_fake_data,create_parameters_for_tx_funcs
-from Neo4j import Neo4j,create_client,create_address,create_marital,create_account
-from Neo4j import create_payment1,create_payment2,create_payment3,create_payment4,create_payment5,create_payment6
+from bigquery import get_bq_client,run_query
+from processing import dictionary_conversation,seed_fake_data,create_parameters_for_tx_funcs
+from neo4j import Neo4j,create_client,create_address,create_marital,create_account
+from neo4j import create_payment1,create_payment2,create_payment3,create_payment4,create_payment5,create_payment6
 
 '''
 CONFIGURATION
 '''
-uri = 'bolt://localhost:7687'
+uri = 'bolt://35.203.107.99:7687'
 username = 'neo4j'
-database = 'graphconnect'
-password = 'foo'
+database = 'neo4j'
+password = 'test'
 query = (
     'SELECT *  FROM `bigquery-public-data.ml_datasets.credit_card_default`'
     'LIMIT 10000')
@@ -25,7 +25,7 @@ neo_client = Neo4j(url=uri,username=username,database=database,password=password
 
 
 '''
-ETL Processing 
+ETL processing 
 '''
 google_Rows = run_query(bq_client,query=query)
 list_of_dictionaries = dictionary_conversation(google_Rows)
@@ -33,7 +33,7 @@ base_data = seed_fake_data(list_of_dictionaries)
 
 
 '''
-Ingesting into Neo4j 
+Ingesting into neo4j 
 '''
 
 client_params = create_parameters_for_tx_funcs(base_data,['id','age','full_name','sex'])
